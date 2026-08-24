@@ -1,0 +1,338 @@
+
+/*
+
+1.El orden de definicion es y de forma alfabetica:
+
+1. Etiquetas html
+2. Identificadores
+3. Clases
+
+2. Los atributos tambien se ordenan alfabeticamente.
+
+3. En el body siempre se debe definir un tamaño de fuente.
+
+4. Para agregar un background puedes utilizar  
+background: url(../img/fondo10.jpg) no-repeat center center fixed;
+
+*/
+ 
+@font-face{
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/Montserrat.ttf) format ("truetype");
+}
+
+*
+{
+	border:0;
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body 
+{
+	background-color: #004744;
+	font-family: "Montserrat", Helvetica, Verdana;
+	font-size: 12px;
+	background-size: cover;
+}
+
+#contenedor
+{
+	width: 1000px;
+	height: auto;
+	margin:0 auto;
+}
+
+header
+{
+	height: 145px;
+	width: 1000px;
+}
+
+nav ul li 
+{
+	display: inline-block;
+	font-size: 16px;
+	float: right;
+	margin-right: 40px;
+	margin-top: 1px;
+	margin-left: 10px;
+}
+
+nav ul li a 
+{
+	text-decoration: none;
+	color: #778873;
+}
+nav ul li a:hover
+{
+	color: #A1BC98;
+	text-shadow: 2px 2px 6px #A1BC98;
+}
+
+/* ---- Banner: presentacion / hero ---- */
+
+#banner
+{
+	display: flex;
+	gap: 20px;
+	width: 1000px;
+	padding: 10px 0 30px 0;
+}
+
+#promo1, #promo2
+{
+	background: #FDF6ED;
+	border: 1px solid #A1BC98;
+	border-radius: 14px;
+	padding: 30px;
+	text-align: center;
+	width: 460px;
+}
+
+#promo1 img
+{
+	width: 220px;
+	margin: 10px auto 20px auto;
+}
+
+#promo1 .etiqueta
+{
+	background: #778873;
+	border-radius: 6px;
+	color: #FDF6ED;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	padding: 8px 20px;
+}
+
+#promo1 h1
+{
+	color: #778873;
+	font-size: 26px;
+	line-height: 1.3;
+}
+
+#promo2
+{
+	text-align: left;
+}
+
+#icono-camara
+{
+	background: #DCCFC0;
+	border-radius: 50%;
+	font-size: 34px;
+	height: 90px;
+	line-height: 90px;
+	margin: 0 auto 20px auto;
+	text-align: center;
+	width: 90px;
+}
+
+#promo2 p
+{
+	color: #333;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-bottom: 12px;
+}
+
+#promo2 strong
+{
+	color: #778873;
+}
+
+#frase
+{
+	color: #778873;
+	font-style: italic;
+	margin-top: 15px !important;
+}
+
+/* ---- Divisor y titulo de servicios ---- */
+
+#divisor
+{
+	color: #778873;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin: 30px 0 5px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#titulo-servicios
+{
+	color: #778873;
+	font-size: 32px;
+	margin-bottom: 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* ---- Servicios ---- */
+
+#servicios
+{
+	background: rgba(220,207,192, 0.4);
+	border-radius: 14px;
+	margin: 20px 0;
+	padding: 30px 20px;
+	width: 1000px;
+}
+
+#servicio1, #servicio2, #servicio3
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	padding: 0 15px;
+	text-align: left;
+}
+
+#icono1, #icono2, #icono3
+{
+	background: #DCCFC0;
+	border-radius: 16px;
+	color: #778873;
+	font-size: 26px;
+	height: 80px;
+	line-height: 55px;
+	margin-bottom: 15px;
+	text-align: center;
+	width: 80px;
+}
+
+#servicio1 .etiqueta, #servicio2 .etiqueta, #servicio3 .etiqueta
+{
+	color: #A1BC98;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#servicio1 h3, #servicio2 h3, #servicio3 h3
+{
+	color: #333;
+	font-size: 17px;
+	line-height: 1.3;
+	margin: 8px 0 12px 0;
+	text-transform: uppercase;
+}
+
+#servicio1 p, #servicio2 p, #servicio3 p
+{
+	color: #555;
+	font-size: 13px;
+	line-height: 1.6;
+	margin-bottom: 15px;
+}
+
+#servicio1 hr, #servicio2 hr, #servicio3 hr
+{
+	border-top: 1px solid #A1BC98;
+	margin-bottom: 15px;
+	opacity: 0.6;
+}
+
+#servicio1 ul, #servicio2 ul, #servicio3 ul
+{
+	list-style: none;
+}
+
+#servicio1 li, #servicio2 li, #servicio3 li
+{
+	color: #555;
+	font-size: 13px;
+	line-height: 1.9;
+}
+
+#servicio1 li i, #servicio2 li i, #servicio3 li i
+{
+	color: #778873;
+	margin-right: 8px;
+}
+
+/* ---- Franja final ---- */
+
+#franja-final
+{
+	align-items: center;
+	background: #DCCFC0;
+	border-radius: 10px;
+	display: flex;
+	gap: 15px;
+	margin-bottom: 20px;
+	padding: 18px 25px;
+	width: 1000px;
+}
+
+#franja-final i
+{
+	background: #778873;
+	border-radius: 8px;
+	color: #FDF6ED;
+	font-size: 20px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	width: 40px;
+}
+
+#franja-final p
+{
+	color: #555;
+	font-size: 13px;
+}
+
+#franja-final strong
+{
+	color: #778873;
+	margin-right: 10px;
+}
+
+/* ---- Footer ---- */
+
+footer
+{
+	background: rgba(119,136,115, 0.85);
+	color: white;
+	font-size: 12px;
+	height: 50px;
+	padding-top: 10px;
+	shape-margin: 15;
+	text-align: center;
+	width: 1000px;
+}
+
+footer a
+{
+	float: left;
+	text-decoration: none;
+}
+
+.fa:hover 
+{
+  opacity: 0.7;
+}
+
+.fa-twitter
+{
+     margin-left: 40px;
+     margin-top: 10px;
+     color: white;
+}
+
+.fa-facebook
+{
+     margin-left: 480px;
+     margin-top: 10px;
+     color: white;
+}
